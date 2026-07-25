@@ -52,48 +52,65 @@ Reads car and owner information from the user and stores it inside an `stCar` st
 
 ```cpp
 void ReadInfo(stCar& Info);
-PrintInfo
+```
+
+### `PrintInfo`
 
 Displays all stored car and owner information.
 
+```cpp
 void PrintInfo(const stCar& Info);
-Information Stored
+```
 
-The program stores the following data:
+## Information Stored
 
-Car Information
-Brand
-Model
-Manufacturing year
-Owner Information
-First name
-Last name
-Gender
-Marital status
-Favourite colour
-Contact Information
-Phone number
-Email
-Instagram account
-Address Information
-Street
-Building number
-Entrance number
-Apartment number
-PO Box
-Technologies Used
-C++
-Visual Studio
-Git
-GitHub
-How to Run
-Clone or download the repository.
-Open the solution in Visual Studio.
-Build the project.
-Run the program using Ctrl + F5.
-Enter the requested information for each car.
-The program will display the entered information.
-Example Workflow
+### Car Information
+
+- Brand
+- Model
+- Manufacturing year
+
+### Owner Information
+
+- First name
+- Last name
+- Gender
+- Marital status
+- Favourite colour
+
+### Contact Information
+
+- Phone number
+- Email
+- Instagram account
+
+### Address Information
+
+- Street
+- Building number
+- Entrance number
+- Apartment number
+- PO Box
+
+## Technologies Used
+
+- C++
+- Visual Studio
+- Git
+- GitHub
+
+## How to Run
+
+1. Clone or download the repository.
+2. Open the solution in Visual Studio.
+3. Build the project.
+4. Run the program using `Ctrl + F5`.
+5. Enter the requested information for each car.
+6. The program will display the entered information.
+
+## Example Workflow
+
+```text
 Enter information for the first car:
 Please enter car brand:
 BMW
@@ -103,27 +120,32 @@ X5
 
 Please enter car year:
 2022
+```
 
 After entering all information, the program displays the complete car and owner record.
 
-Current Limitations
-Text containing spaces is currently read as one word.
-User choices for gender, marital status, and colour are not yet validated.
-The program currently reads two car records only.
-Data is not saved permanently after the program closes.
-Planned Improvements
-Use getline to support names and addresses containing spaces
-Validate all user input
-Divide reading and printing into smaller functions
-Allow the user to choose the number of cars
-Add a menu system
-Store multiple cars using arrays or vectors
-Add search, edit, and delete options
-Save and load data from files
-Learning Purpose
+## Current Limitations
+
+- Text containing spaces is currently read as one word.
+- User choices for gender, marital status, and colour are not yet validated.
+- The program currently reads two car records only.
+- Data is not saved permanently after the program closes.
+
+## Planned Improvements
+
+- Use `getline` to support names and addresses containing spaces.
+- Validate all user input.
+- Divide reading and printing into smaller functions.
+- Allow the user to choose the number of cars.
+- Add a menu system.
+- Store multiple cars using arrays or vectors.
+- Add search, edit, and delete options.
+- Save and load data from files.
+
+## Learning Purpose
 
 This project is part of my C++ learning journey and my first practical experience using Git and GitHub to track changes through meaningful commits.
 
-Author
+## Author
 
 Mostafa Mohamed
