@@ -1,35 +1,63 @@
 #include <iostream> 
 #include <string>
 using namespace std;
+enum enColor
+{
+	Red,
+	Green,
+	Yellow,
+	Blue
+};
+
+enum enGender
+{
+	Male,
+	Female
+};
+
+enum enMaritalStatus
+{
+	Single,
+	Married
+};
 
 
 struct stAddress
 {
-	string street;
-	string buildingNumber;
-	string entranceNumber;
-	string apartmentNumber;
-	string poBox;
+	string Street;
+	string BuildingNumber;
+	string EntranceNumber;
+	string ApartmentNumber;
+	string POBox;
 };
 
-struct stOwner
-{
-	string FullName;
+struct stContactInfo {
 	stAddress Address;
 	string PhoneNumber;
 	string Email;
 	string Instagram;
+
 };
 
-struct car {
+struct stowner
+{
+	string FirstName;
+	string LastName;
+	stContactInfo ContactInfo;
+	enColor FavoriteColor;
+	enGender Gender;
+	enMaritalStatus MaritalStatus;
+};
+
+struct stCar {
 	string Brand;
 	string Model; 
 	int Year;
-	stOwner owner;
+	stowner owner;
 };
 
 int main() {
-	car MyCar1, MyCar2;
+	stCar MyCar1, MyCar2;
 
 	MyCar1.Brand = "BMW";
 	MyCar1.Model = "X5";
@@ -41,7 +69,12 @@ int main() {
 	MyCar2.Year = 2022;
 
 	
-	cout << MyCar1.Brand << " " << MyCar1.Model << " " << MyCar1.Year << "\n";
-	cout << MyCar2.Brand << " " << MyCar2.Model << " " << MyCar2.Year << "\n";
+	cout << MyCar1.Brand << " "
+		<< MyCar1.Model << " "
+		<< MyCar1.Year << "\n";
 
+	cout << MyCar2.Brand << " "
+		<< MyCar2.Model << " "
+		<< MyCar2.Year << "\n";
+	return 0;
 }
