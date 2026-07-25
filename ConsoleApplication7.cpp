@@ -2,10 +2,20 @@
 using namespace std;
 
 
+struct stOwner
+{
+	string FullName;
+	string Address;
+	string PhoneNumber;
+	string Email;
+	string Instagram;
+};
+
 struct car {
 	string Brand;
 	string Model; 
 	int Year;
+	stOwner owner;
 };
 
 int main() {
