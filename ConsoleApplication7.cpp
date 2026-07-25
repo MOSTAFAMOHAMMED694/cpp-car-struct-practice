@@ -1,11 +1,21 @@
 #include <iostream> 
+#include <string>
 using namespace std;
 
+
+struct stAddress
+{
+	string street;
+	string buildingNumber;
+	string entranceNumber;
+	string apartmentNumber;
+	string poBox;
+};
 
 struct stOwner
 {
 	string FullName;
-	string Address;
+	stAddress Address;
 	string PhoneNumber;
 	string Email;
 	string Instagram;
